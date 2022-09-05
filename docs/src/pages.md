@@ -3,12 +3,7 @@ id: pages
 title: "Pages"
 ---
 
-<!-- TOC -->
-
-## Pages
-
-Each [BrowserContext] can have multiple pages. A [Page] refers to a single tab or a popup window within a browser
-context. It should be used to navigate to URLs and interact with the page content.
+Each [BrowserContext] can have multiple pages. A [Page] refers to a single tab or a popup window within a browser context. It should be used to navigate to URLs and interact with the page content.
 
 ```js
 // Create a page.
@@ -86,9 +81,8 @@ Console.WriteLine(page.Url);
 ## Multiple pages
 
 Each browser context can host multiple pages (tabs).
-* Each page behaves like a focused, active page. Bringing the page to front is not required.
-* Pages inside a context respect context-level emulation, like viewport sizes, custom network routes or browser
-  locale.
+* Each page behaves like a focused, active page. Bringing the page to the front is not required.
+* Pages inside a context respect context-level emulation, like viewport sizes, custom network routes or browser locale.
 
 ```js
 // Create two pages
@@ -137,8 +131,7 @@ var allPages = context.Pages;
 
 ## Handling new pages
 
-The `page` event on browser contexts can be used to get new pages that are created in the context. This can be used to
-handle new pages opened by `target="_blank"` links.
+The `page` event on browser contexts can be used to get new pages that are created in the context. This can be used to handle new pages opened by `target="_blank"` links.
 
 ```js
 // Get page after a specific action (e.g. clicking a link)
